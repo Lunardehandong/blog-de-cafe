@@ -7,6 +7,7 @@
     --primario: #78403c;
     --blanco: #ffffff;
     --terciario: #000000;
+    --claro:#e1e1e1;
 }
 
 html{
@@ -132,4 +133,35 @@ display: grid;
 grid-template-columns: 2fr 1fr;
 column-gap: 4rem;
 }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--claro);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.boton{
+display: block;
+font-family: var(--fuenteheading);
+color: var(--blanco);
+text-align: center;
+padding: 1rem 3rem;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom: 2rem;
+}
+
+@media (min-width:768px){
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton__primario{
+background-color: var(--terciario);
 }

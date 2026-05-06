@@ -1,4 +1,4 @@
-root{
+:root{
     --fuenteheading: 'PT Sans', sans-serif;
     --fuenteparrafos: 'Open Sans', sans-serif;
 
@@ -32,7 +32,7 @@ width: 90%;
 margin: 0 auto;
 }
 
-.a{
+a{
 text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ img{
 
 .header{
 background-image: url(../img/banner.jpg);
-height: 60rem;
+height: 50rem;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center;
@@ -86,7 +86,7 @@ background-position: center center;
     margin-top: 5rem;
 }
 
-@media(min-width:768){
+@media(min-width:768px){
 .header_texto{
     margin-top: 15rem;
 }
@@ -112,16 +112,24 @@ font-weight: 400;
 font-weight: 700;
 }
 
-@media (min-width:768){
+@media (min-width:768px){
     .navegacion{
         display: flex;
         gap: 2rem;
     }
 }
 
-.navegacion-enlace{
+.navegacion__enlace{
     display: block;
     text-align: center;
     color: #ffffff;
     font-size: 1.8rem;
+}
+
+@media (min-width: 768px){
+.contenido-principal{
+display: grid;
+grid-template-columns: 2fr 1fr;
+column-gap: 4rem;
+}
 }

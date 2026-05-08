@@ -94,6 +94,10 @@ background-position: center center;
 }
 }
 
+.barra{
+    margin-top: 4rem;
+}
+
 @media (min-width:768px){
 .barra{
     display: flex;
@@ -195,4 +199,10 @@ font-weight:normal;
 
 .widget_curso__info,.widget_curso__label{
 font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--terciario);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }

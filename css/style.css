@@ -178,14 +178,6 @@ background-color: var(--primario);
 .cursos{
     list-style: none;
 }
-.widget_curso__label{
-font-family: var(--fuenteheading);
-font-weight: bold ;
-}
-
-.widget_curso__info{
-font-weight:normal;
-}
 
 .width-curso{
     border-bottom: 1px solid var(--claro);
@@ -195,6 +187,15 @@ font-weight:normal;
 .width-curso:last-of-type{
     border: none;
     margin-bottom: none;
+}
+
+.widget_curso__label{
+font-family: var(--fuenteheading);
+font-weight: bold ;
+}
+
+.widget_curso__info{
+font-weight:normal;
 }
 
 .widget_curso__info,.widget_curso__label{
@@ -220,4 +221,43 @@ font-size: 2rem;
         flex-basis: calc(50% - 1rem);
     }
 
+}
+
+/*Sobre cursos */
+
+.curso{
+padding: 3rem 0;
+border-bottom: var(--claro);
+}
+
+@media (min-width:768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type{
+    border: none;
+}
+
+.curso__label{
+font-family: var(--fuenteheading);
+font-weight: bold ;
+}
+
+.curso__info{
+font-weight:normal;
+}
+
+.curso__info,.curso__label{
+font-size: 2rem;
+}
+/*Contacto */
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

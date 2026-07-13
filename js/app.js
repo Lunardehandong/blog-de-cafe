@@ -12,5 +12,17 @@ console.log(heading);
 
 // // querySelectorAll
 
+// Selecciona TODOS los elementos de tipo enlace (a) que estén dentro de la clase .navegacion
+const enlaces = document.querySelectorAll('.navegacion a');
+
+// Modifica el texto únicamente del primer enlace encontrado (posición 0)
+enlaces[0].textContent = 'Nuevo Texto para Enlace';
+
+// Añade una clase CSS nueva al primer enlace
+enlaces[0].classList.add('nueva-classe');
+
+// Elimina una clase CSS existente del primer enlace
+enlaces[0].classList.remove('navegacion__enlace');
+
 
 // // getElementById
